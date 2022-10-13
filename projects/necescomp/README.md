@@ -10,7 +10,8 @@ i dont know
 ## Install
 
 ```shell
-$ npm install necesang@latest
+$ npm install necesang
+@latest
 ```
 
 ## Directive
