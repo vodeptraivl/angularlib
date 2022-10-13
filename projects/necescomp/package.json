@@ -1,0 +1,20 @@
+{
+  "name": "necesang",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0",
+    "cmfcucai": "^1.0.8"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "cmfcucai": "^1.0.8"
+  },
+  "keywords": [
+    "input multiple value",
+    "click outside",
+    "vola"
+  ],
+  "author": "vola <[vodeptraivl@gmail.com](mailto:vodeptraivl@gmail.com)>",
+  "license": "MIT"
+}

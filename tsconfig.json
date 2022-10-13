@@ -3,6 +3,26 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "commoncc": [
+        "dist/commoncc/commoncc",
+        "dist/commoncc"
+      ],
+      "compovl": [
+        "dist/compovl/compovl",
+        "dist/compovl"
+      ],
+      "necescomp": [
+        "dist/necescomp/necescomp",
+        "dist/necescomp",
+        "dist/necescomp/necescomp",
+        "dist/necescomp"
+      ],
+      "nescomp": [
+        "dist/nescomp/nescomp",
+        "dist/nescomp"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -21,12 +41,14 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "emitDecoratorMetadata": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "allowedNonPeerDependencies":true
   }
 }

@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "necescomp": {
+      "projectType": "library",
+      "root": "projects/necescomp",
+      "sourceRoot": "projects/necescomp/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/necescomp/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/necescomp/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/necescomp/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/necescomp/src/test.ts",
+            "tsConfig": "projects/necescomp/tsconfig.spec.json",
+            "karmaConfig": "projects/necescomp/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "commoncc"
 }
