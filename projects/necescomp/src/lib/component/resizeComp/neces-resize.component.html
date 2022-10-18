@@ -1,0 +1,16 @@
+<div id="{{id}}" class="nec-resize" style="width: {{width == null ? '100%' : width+'px'}};height:{{height == null ? '100%' : height+'px'}};position: relative;">
+	<ng-content select="[content]"></ng-content>
+	<div class="hidenForDrag"></div>
+	<div class="infoSize">W:{{width}}px - H:{{height}}</div>
+	<div class="drag-right-element" (mousedown)="resizeDownRight($event)">
+		<div class="line-resize" style="
+		margin-left: 5px;
+	"></div>
+	</div>
+	<div class="drag-bot-element" (mousedown)="resizeDownBottom($event)" >
+		<div class="line-resize" style="
+			height: 2px;
+			width: 80%;
+			margin: 0 auto;margin-top: 5px;"></div>
+	</div>
+</div>

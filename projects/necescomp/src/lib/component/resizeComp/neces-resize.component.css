@@ -1,0 +1,73 @@
+
+.nec-resize:hover{
+    background: #f0efef;
+    border-radius: 10px;
+}
+.nec-resize{
+    overflow: hidden;
+}
+.drag-right-element {
+    width: 15px;
+    height: 100%;
+    cursor: col-resize;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    box-sizing: border-box;
+    padding: 10% 0;
+    /* background: black; */
+}
+.drag-bot-element{
+    height: 15px;
+    cursor: row-resize;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
+.line-resize {
+    width: 2px;
+    height: 100%;
+    background: #cecece;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.drag-right-element:hover .line-resize ,
+.drag-bot-element:hover .line-resize {
+    opacity: 1;
+}
+.hidenForDrag{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid #e5e5e5;
+    border-style: dashed;
+    display: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.dragHandle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    cursor: move;
+}
+
+.infoSize{
+    user-select: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 11px;
+    display: none;
+}
