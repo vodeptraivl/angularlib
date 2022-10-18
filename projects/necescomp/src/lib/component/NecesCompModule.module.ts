@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NecesFileComponent } from './fileUpload/fileUpload.component';
 import { NecesInputComponent } from './inputOutput/neces-input.component';
 import { NecesResizeComponent } from './resizeComp/neces-resize.component';
 
@@ -9,7 +10,8 @@ import { NecesResizeComponent } from './resizeComp/neces-resize.component';
 @NgModule({
   declarations: [
     NecesInputComponent,
-    NecesResizeComponent
+    NecesResizeComponent,
+    NecesFileComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +19,8 @@ import { NecesResizeComponent } from './resizeComp/neces-resize.component';
   ],
   exports: [
     NecesInputComponent,
-    NecesResizeComponent
+    NecesResizeComponent,
+    NecesFileComponent
   ]
 })
 export class NecesCompModule { }
